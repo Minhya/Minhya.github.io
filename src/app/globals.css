@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light (default) palette — warm neutrals */
+  --background: #fbf7f3;        /* beige */
+  --surface: #ffffff;           /* white */
+  --surface-muted: #f3ece5;     /* soft beige */
+  --foreground: #1a1414;        /* near-black with warm tint */
+  --foreground-muted: #6b5f57;  /* taupe for secondary text */
+  --border: #ebe1d6;
+  --accent: #f5c6d0;            /* baby pink */
+  --accent-strong: #e89fae;     /* deeper pink for hover/focus */
+  --accent-ink: #5a2a36;        /* readable text on pink */
+}
+
+.dark {
+  /* Dark palette — keeps the warm tone, no cold blue-greys */
+  --background: #14100e;
+  --surface: #1c1715;
+  --surface-muted: #241e1b;
+  --foreground: #f5ede4;
+  --foreground-muted: #b8a99d;
+  --border: #2e2522;
+  --accent: #f5c6d0;
+  --accent-strong: #fbd9e0;
+  --accent-ink: #2a1419;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-ink: var(--accent-ink);
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-display: var(--font-display), Georgia, serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
 }
