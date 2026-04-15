@@ -33,8 +33,9 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-7xl lg:text-8xl"
         >
-          Software developer <br />
-          <span className="italic text-accent-strong">building</span> with care.
+          Creative developer, <br />
+          <span className="italic text-accent-strong">logical</span> problem
+          solver.
         </motion.h1>
 
         <motion.p
@@ -43,9 +44,10 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-2xl text-lg leading-relaxed text-foreground-muted sm:text-xl"
         >
-          {site.tagline}. I bring the clarity and structure of my strategic-HRM
-          background into backend and systems work — the kind of code that
-          reads well on a Monday morning.
+          I'm drawn to the hard parts of software — knotty architecture,
+          tangled bugs, the puzzles that reward both logic and a bit of
+          creative thinking. My MSc in Strategic HRM taught me to see systems
+          as a whole; code is where I now put that habit to work.
         </motion.p>
 
         <motion.div

@@ -1,14 +1,14 @@
 export const site = {
   name: "Anna Nguyen",
   shortName: "Anna",
-  tagline: "Software developer with an MSc in Strategic HRM",
+  tagline: "Creative software developer and logical problem solver",
   url: "https://minhya.github.io",
   email: "anna.nguyen0221@gmail.com",
   location: "Sweden",
   bio: [
-    "With a master's degree in Strategic HRM, I bring clear communication and structure into my code. I'm looking for a role in systems / backend development — on-site or remote.",
-    "I work mainly in C#, Java and Spring Boot with databases (SQL among others) and the web stack, and have hands-on experience with APIs, React, JavaScript, JUnit and Mockito.",
-    "I'm also drawn to cloud services like AWS and to cybersecurity. Off the clock I nerd out on tech and games.",
+    "I'm a curious, creative developer who lights up around hard problems. My MSc in Strategic HRM taught me to see how people and systems actually fit together — that same instinct is what I bring to code. I'm looking for a role in systems / backend development, on-site or remote.",
+    "I work mainly in C#, Java and Spring Boot with SQL and the web stack, and have hands-on experience with APIs, React, JavaScript, JUnit and Mockito.",
+    "I'm also drawn to cloud services like AWS and to cybersecurity — fields where the puzzles stay interesting. Off the clock, I nerd out on tech and games.",
   ],
   socials: {
     github: "https://github.com/Minhya",

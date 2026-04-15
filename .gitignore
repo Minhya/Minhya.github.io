@@ -44,3 +44,9 @@ next-env.d.ts
 .claude/
 CLAUDE.md
 AGENTS.md
+
+# favicon source (processed into src/app/icon.png + apple-icon.png)
+favicon-source.png
+
+# jetbrains (webstorm/rider/intellij) project files
+.idea/

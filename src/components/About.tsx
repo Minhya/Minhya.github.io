@@ -28,7 +28,7 @@ export function About() {
         transition={{ delay: 0.05 }}
         className="mt-2 font-display text-4xl font-semibold tracking-tight sm:text-5xl"
       >
-        A calm operator turned developer.
+        Curious by nature. Logical by training.
       </motion.h2>
 
       <div className="mt-10 grid gap-12 md:grid-cols-5">
