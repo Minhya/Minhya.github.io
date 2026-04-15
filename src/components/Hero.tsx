@@ -34,7 +34,7 @@ export function Hero() {
           className="font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-7xl lg:text-8xl"
         >
           Creative developer, <br />
-          <span className="italic text-accent-strong">logical</span> problem
+          <span className="italic text-accent-strong">logical </span> problem
           solver.
         </motion.h1>
 
@@ -46,8 +46,7 @@ export function Hero() {
         >
           I'm drawn to the hard parts of software — knotty architecture,
           tangled bugs, the puzzles that reward both logic and a bit of
-          creative thinking. My MSc in Strategic HRM taught me to see systems
-          as a whole; code is where I now put that habit to work.
+          creative thinking.
         </motion.p>
 
         <motion.div
