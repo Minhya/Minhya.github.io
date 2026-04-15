@@ -14,7 +14,6 @@ export const site = {
     github: "https://github.com/Minhya",
     linkedin: "https://www.linkedin.com/in/anna-nguyenn/",
   },
-  resumeUrl: "/resume.pdf",
   skills: {
     languages: ["C#", "Java", "JavaScript", "TypeScript", "SQL"],
     frameworks: ["Spring Boot", ".NET", "React", "Next.js", "Tailwind CSS"],

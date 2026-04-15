@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDownRight, FileText, Mail } from "lucide-react";
+import { ArrowDownRight, Mail } from "lucide-react";
 import { site } from "@/lib/site";
 
 export function Hero() {
@@ -61,15 +61,6 @@ export function Hero() {
           >
             View projects
             <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
-          </a>
-          <a
-            href={site.resumeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent-strong"
-          >
-            <FileText className="h-4 w-4" />
-            Download CV
           </a>
           <a
             href={`mailto:${site.email}`}
