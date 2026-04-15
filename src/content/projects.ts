@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "A clean, calm budgeting app focused on monthly planning and honest spending patterns.",
     description:
       "A budgeting tool that leans into clarity — set monthly envelopes, categorise transactions, and see where the month actually went. Designed to be pleasant to open every Sunday, not another app that guilts you.",
-    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "C#"],
+    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "C#", "SQL"],
     status: "planning",
   },
 ];

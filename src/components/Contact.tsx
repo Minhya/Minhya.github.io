@@ -40,8 +40,7 @@ export function Contact() {
         transition={{ delay: 0.1 }}
         className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
       >
-        Whether it's a backend role, a side-project collaboration, or you just
-        want to geek out about cybersecurity — my inbox is open.
+          Currently open to backend, systems, and fullstack development roles — on-site or remote. My inbox is open.
       </motion.p>
 
       <motion.ul
