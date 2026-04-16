@@ -1,10 +1,19 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { projects } from "@/content/projects";
 import { ProjectCard } from "./ProjectCard";
 
+const INITIAL_COUNT = 4;
+
 export function Projects() {
+  const [expanded, setExpanded] = useState(false);
+
+  const visible = expanded ? projects : projects.slice(0, INITIAL_COUNT);
+  const hasMore = projects.length > INITIAL_COUNT;
+
   return (
     <section id="projects" className="mx-auto max-w-5xl px-6 py-24">
       <motion.p
@@ -31,10 +40,26 @@ export function Projects() {
       </div>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2">
-        {projects.map((project, i) => (
+        {visible.map((project, i) => (
           <ProjectCard key={project.slug} project={project} index={i} />
         ))}
       </div>
+
+      {hasMore && (
+        <div className="mt-8 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setExpanded((prev) => !prev)}
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent-strong hover:bg-surface-muted"
+          >
+            {expanded ? (
+              <>Show less <ChevronUp className="h-4 w-4" /></>
+            ) : (
+              <>Show more <ChevronDown className="h-4 w-4" /></>
+            )}
+          </button>
+        </div>
+      )}
     </section>
   );
 }
