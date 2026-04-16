@@ -23,11 +23,10 @@ export function Projects() {
           transition={{ delay: 0.05 }}
           className="font-display text-4xl font-semibold tracking-tight sm:text-5xl"
         >
-          What I'm building next.
+          What I've been building.
         </motion.h2>
         <p className="max-w-sm text-sm text-foreground-muted">
-          Placeholders for projects currently on my desk — I'll be writing them up
-          here as they come together.
+          A mix of finished work and what's coming next.
         </p>
       </div>
 

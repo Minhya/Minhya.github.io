@@ -1,4 +1,4 @@
-export type ProjectStatus = "planning" | "in-progress" | "live";
+export type ProjectStatus = "planning" | "in-progress" | "complete" | "live";
 
 export type Project = {
   slug: string;
@@ -9,9 +9,47 @@ export type Project = {
   status: ProjectStatus;
   repoUrl?: string;
   liveUrl?: string;
+  collaboration?: boolean;
 };
 
 export const projects: Project[] = [
+  // ── Finished ──────────────────────────────────────────────────
+  {
+    slug: "cosmigo",
+    title: "Cosmigo — Gamified Pomodoro",
+    summary:
+      "A full-stack productivity app that gamifies the Pomodoro technique. Features a timer, to-do list, rich-text notes, and a character that grows as you work.",
+    description:
+      "Group project built with a Vue 3 / PrimeVue frontend and a Node.js + Express backend, backed by MySQL and containerised with Docker. Users create accounts, run Pomodoro sessions, take notes in a rich-text editor (Quill), manage to-dos, and level up a personal character through XP earned by completing sessions. My contributions spanned both the frontend and the integration between the Vue state layer (Pinia) and the REST API.",
+    tags: ["Vue 3", "Node.js", "Express", "MySQL", "Pinia", "PrimeVue", "Docker"],
+    status: "complete",
+    repoUrl: "https://github.com/JenDevs/cosmigo",
+    collaboration: true,
+  },
+  {
+    slug: "vue-coffee-list",
+    title: "Vue Coffee List",
+    summary:
+      "A coffee drink manager built to explore Vue 3 — log drinks by category, search and sort the list, with an admin mode for managing entries.",
+    description:
+      "A single-page app where you log in with a name, add coffees to your personal list (Espresso, Milk-based, Brew, Cold), search and sort the collection, and remove entries if you're an admin. Built with no external libraries — just Vue 3 and Vite — as a hands-on exercise in Vue fundamentals: computed properties, event handling, conditional rendering, and reactive state.",
+    tags: ["Vue 3", "Vite", "JavaScript", "CSS"],
+    status: "complete",
+    repoUrl: "https://github.com/Minhya/vuecoffeelist",
+  },
+  {
+    slug: "blackpink-discography",
+    title: "BLACKPINK Discography Site",
+    summary:
+      "A fan-made discography website for BLACKPINK — built from scratch with plain HTML, CSS, and JavaScript.",
+    description:
+      "An artist website exercise built entirely without frameworks — structured HTML, hand-written CSS layouts, and vanilla JavaScript. Covers BLACKPINK's discography in a clean, browsable format. A focused demonstration of core web fundamentals before moving into framework-based work.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    status: "complete",
+    repoUrl: "https://github.com/Minhya/webbutv/tree/main/ovningar/artisthemsida",
+  },
+
+  // ── In progress / planned ─────────────────────────────────────
   {
     slug: "bookclub-library",
     title: "Digital Library for My Book Club",
