@@ -20,7 +20,7 @@ export const projects: Project[] = [
     summary:
       "A full-stack productivity app that gamifies the Pomodoro technique. Features a timer, to-do list, rich-text notes, and a character that grows as you work.",
     description:
-      "Group project built with a Vue 3 / PrimeVue frontend and a Node.js + Express backend, backed by MySQL and containerised with Docker. Users create accounts, run Pomodoro sessions, take notes in a rich-text editor (Quill), manage to-dos, and level up a personal character through XP earned by completing sessions. My contributions spanned both the frontend and the integration between the Vue state layer (Pinia) and the REST API.",
+      "Group project built with a Vue 3 / PrimeVue frontend and a Node.js + Express backend, backed by MySQL and containerised with Docker. Users create accounts, run Pomodoro sessions, take notes in a rich-text editor, manage to-dos, and level up a personal character through XP earned by completing sessions. My contributions: I built the to-do list feature, contributed to the overall design of the application, and participated in building the backend.",
     tags: ["Vue 3", "Node.js", "Express", "MySQL", "Pinia", "PrimeVue", "Docker"],
     status: "complete",
     repoUrl: "https://github.com/JenDevs/cosmigo",
