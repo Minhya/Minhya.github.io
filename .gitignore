@@ -40,11 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# claude code local tooling
-.claude/
-CLAUDE.md
-AGENTS.md
-
 # favicon source (processed into src/app/icon.png + apple-icon.png)
 favicon-source.png
 
