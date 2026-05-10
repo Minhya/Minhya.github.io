@@ -58,6 +58,7 @@ export const projects: Project[] = [
     description: "A fullstack app where members can share their reminders and notes together. Add notes, todos and set reminders for them.",
     tags: ["Next.js", "React Native", "Expo", "TypeScipt", "SQLite", "NativeWind"],
     status: "in-progress",
+    repoUrl: "https://github.com/Minhya/glum",
   },
   {
     slug: "bookclub-library",
