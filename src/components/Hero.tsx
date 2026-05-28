@@ -24,7 +24,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="font-mono text-sm text-accent-strong"
         >
-          Hi, I'm {site.shortName} —
+          Hi, I'm {site.shortName}
         </motion.p>
 
         <motion.h1
@@ -44,7 +44,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-2xl text-lg leading-relaxed text-foreground-muted sm:text-xl"
         >
-          I'm drawn to the hard parts of software — knotty architecture,
+          I'm drawn to the hard parts of software, knotty architecture,
           tangled bugs, the puzzles that reward both logic and a bit of
           creative thinking.
         </motion.p>

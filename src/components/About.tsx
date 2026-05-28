@@ -19,7 +19,7 @@ export function About() {
         viewport={{ once: true, margin: "-80px" }}
         className="font-mono text-sm text-accent-strong"
       >
-        01 — About
+        About
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 8 }}

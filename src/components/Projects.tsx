@@ -22,7 +22,7 @@ export function Projects() {
         viewport={{ once: true, margin: "-80px" }}
         className="font-mono text-sm text-accent-strong"
       >
-        02 — Projects
+        Projects
       </motion.p>
       <div className="mt-2 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <motion.h2

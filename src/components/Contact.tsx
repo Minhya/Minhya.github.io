@@ -20,7 +20,7 @@ export function Contact() {
         viewport={{ once: true, margin: "-80px" }}
         className="font-mono text-sm text-accent-strong"
       >
-        03 — Contact
+        Contact
       </motion.p>
 
       <motion.h2
@@ -40,7 +40,7 @@ export function Contact() {
         transition={{ delay: 0.1 }}
         className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
       >
-          Currently open to backend, systems, and fullstack development roles — on-site or remote. My inbox is open.
+          Currently open to backend, systems, and fullstack development roles, on-site or remote. My inbox is open.
       </motion.p>
 
       <motion.ul

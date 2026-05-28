@@ -16,7 +16,7 @@ export const projects: Project[] = [
   // ── Finished ──────────────────────────────────────────────────
   {
     slug: "cosmigo",
-    title: "Cosmigo — Gamified Pomodoro",
+    title: "Cosmigo, Gamified Pomodoro",
     summary:
       "A fullstack productivity app that gamifies the Pomodoro technique. Features a timer, to-do list, rich-text notes, and a character that grows as you work.",
     description:
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     slug: "blackpink-discography",
     title: "BLACKPINK Discography Site",
     summary:
-      "A fanmade discography website for BLACKPINK — built from scratch with plain HTML, CSS, and JavaScript.",
+      "A fanmade discography website for BLACKPINK, built from scratch with plain HTML, CSS, and JavaScript.",
     description:
       "An artist website exercise built entirely without frameworks, structured HTML, hand-written CSS layouts, and vanilla JavaScript. Covers BLACKPINK's discography in a clean, browsable format. A focused demonstration of core web fundamentals before moving into framework-based work.",
     tags: ["HTML", "CSS", "JavaScript"],
@@ -52,7 +52,7 @@ export const projects: Project[] = [
   // ── In progress / planned ─────────────────────────────────────
   {
     slug: "note-app",
-    title: "glum — a shared app for writing notes and reminders",
+    title: "glum, a shared app for writing notes and reminders",
     summary:
         "A shared note app, where we can keep up with our todos together. Need to add something to the grocery list that the other can see? Here you go.",
     description: "A fullstack app where members can share their reminders and notes together. Add notes, todos and set reminders for them.",
