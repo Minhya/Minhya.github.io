@@ -59,7 +59,7 @@ export default function RootLayout({
           <Nav />
           <main className="flex-1">{children}</main>
           <footer className="border-t border-border/60 py-8 text-center text-sm text-foreground-muted">
-            © {new Date().getFullYear()} {site.name}. Built with Next.js + Tailwind.
+            © {new Date().getFullYear()} {site.name}.
           </footer>
         </ThemeProvider>
       </body>
