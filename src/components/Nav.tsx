@@ -38,9 +38,9 @@ export function Nav() {
       <nav aria-label="Main navigation" className="side-nav">
         {links.map(({ id, label, Icon }) => (
           id === "resume" ? (
-            <a key={id} href="/anna-nguyen-resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resumé (opens in a new tab)">
+            <Link key={id} href="/resume/" aria-current={pathname === "/resume" || pathname === "/resume/" ? "page" : undefined}>
               <Icon size={18} strokeWidth={1.5} aria-hidden="true" /><span>{label}</span>
-            </a>
+            </Link>
           ) : <Link key={id} href={`/#${id}`} aria-current={pathname === "/" && active === id ? "location" : undefined}>
             <Icon size={18} strokeWidth={1.5} aria-hidden="true" /><span>{label}</span>
           </Link>
