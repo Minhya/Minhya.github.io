@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowLeft, ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/site";
 
 export function Hero() {
@@ -15,7 +15,7 @@ export function Hero() {
           <span className="hello-mark" aria-hidden="true">✳</span>
           <h2>Hi, I’m Anna.<br />I like a good problem.</h2>
           <p>I build software with .NET, Java, and a curious mind. Drawn to the backend, the tricky bugs, and figuring out how things fit together.</p>
-          <a href="#projects" className="outline-link">Explore my work <ArrowUpRight size={18} aria-hidden="true" /></a>
+          <a href="#projects" className="outline-link">Explore my work <ArrowLeft size={18} aria-hidden="true" /></a>
         </div>
         <a className="hero-scroll" href="#about"><ArrowDown size={16} aria-hidden="true" /> A little about me</a>
       </div>

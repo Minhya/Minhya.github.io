@@ -8,6 +8,25 @@ const groups = [
   { label: "Exploring", items: site.skills.interests },
 ];
 
+const education = [
+  {
+    programme: "Bachelor’s Programme in Human Resources, specialising in Work and Organisational Psychology",
+    institution: "University West",
+    start: "2017-08", end: "2020-06", dates: "08/2017 to 06/2020",
+  },
+  {
+    programme: "Master’s Programme in Strategic Human Resource Management and Labour Relations",
+    institution: "University of Gothenburg",
+    start: "2021-08", end: "2023-06", dates: "08/2021 to 06/2023",
+  },
+  {
+    programme: "Java Development",
+    institution: "IT-Högskolan",
+    start: "2024-08", end: "2026-06", dates: "08/2024 to 06/2026",
+    placement: "LIA placement: Systems Developer at arena, 11/2025 to 06/2026.",
+  },
+];
+
 export function About() {
   return (
     <section id="about" className="page-section biography">
@@ -30,6 +49,23 @@ export function About() {
             <div className="skill-row" key={label}><dt>{label}</dt><dd>{items.join(", ")}</dd></div>
           ))}</dl>
         </div>
+      </div>
+      <div className="education-section">
+        <h3 className="section-title">Education</h3>
+        <ol className="education-timeline">
+          {education.map((entry) => (
+            <li key={entry.start}>
+              <div className="education-period">
+                <span>{entry.dates}</span>
+                {entry.institution ? <p>{entry.institution}</p> : null}
+              </div>
+              <div className="education-programme">
+                <h4>{entry.programme}</h4>
+                {entry.placement ? <p className="education-placement">{entry.placement}</p> : null}
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );
