@@ -7,7 +7,7 @@ export function Projects() {
   return (
     <section id="projects" className="page-section work-section">
       <div className="work-heading">
-        <h2 className="section-title">Reflections on my work</h2>
+        <h2 className="section-title">Portfolio of projects</h2>
         <p>Things I’m building, things I’ve finished,<br className="hidden sm:block" /> and ideas I want to bring to life.</p>
       </div>
       <div className="project-grid">
