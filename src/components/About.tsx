@@ -53,7 +53,7 @@ export function About() {
       <div className="education-section">
         <h3 className="section-title">Education</h3>
         <ol className="education-timeline">
-          {education.map((entry) => (
+          {education.toReversed().map((entry) => (
             <li key={entry.start}>
               <div className="education-period">
                 <span>{entry.dates}</span>

@@ -12,8 +12,8 @@ const links = [
   { id: "home", label: "Home", Icon: House },
   { id: "about", label: "Biography", Icon: UserRound },
   { id: "projects", label: "Work", Icon: BriefcaseBusiness },
-  { id: "resume", label: "Resumé", Icon: FileText },
   { id: "contact", label: "Contact", Icon: Mail },
+  { id: "resume", label: "Resumé", Icon: FileText },
 ];
 
 export function Nav() {
