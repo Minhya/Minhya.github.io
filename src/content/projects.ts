@@ -32,7 +32,7 @@ export const projects: Project[] = [
     summary:
       "A coffee drink manager built to explore Vue, log drinks by category, search and sort the list, with an admin mode for managing entries.",
     description:
-      "A single-page app where you log in with a name, add coffees to your personal list (Espresso, Milk-based, Brew, Cold), search and sort the collection, and remove entries if you're an admin. Built with no external libraries — just Vue 3 and Vite — as a hands-on exercise in Vue fundamentals: computed properties, event handling, conditional rendering, and reactive state.",
+      "A single-page app where you log in with a name, add coffees to your personal list (Espresso, Milk-based, Brew, Cold), search and sort the collection, and remove entries if you're an admin. Built with no external libraries, using just Vue 3 and Vite, as a hands-on exercise in Vue fundamentals: computed properties, event handling, conditional rendering, and reactive state.",
     tags: ["Vue 3", "Vite", "JavaScript", "CSS"],
     status: "complete",
     repoUrl: "https://github.com/Minhya/vuecoffeelist",
@@ -56,9 +56,8 @@ export const projects: Project[] = [
     summary:
         "A shared note app, where we can keep up with our todos together. Need to add something to the grocery list that the other can see? Here you go.",
     description: "A fullstack app where members can share their reminders and notes together. Add notes, todos and set reminders for them.",
-    tags: ["Next.js", "React Native", "Expo", "TypeScipt", "SQLite", "NativeWind"],
+    tags: ["Next.js", "React Native", "Expo", "TypeScript", "SQLite", "NativeWind"],
     status: "in-progress",
-    repoUrl: "https://github.com/Minhya/glum",
   },
   {
     slug: "bookclub-library",

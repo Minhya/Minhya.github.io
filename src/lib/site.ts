@@ -6,9 +6,9 @@ export const site = {
   email: "anna.nguyen0221@gmail.com",
   location: "Sweden",
   bio: [
-    "I'm a curious, creative developer who lights up around hard problems. I'm looking for a role in systems / backend development, on-site or remote.",
+    "I'm a curious, creative developer who lights up around hard problems. I'm looking for a role in systems, backend, or fullstack development, on-site or remote.",
     "I work mainly in .NET, Java and Spring Boot with SQL and the web stack, and have hands-on experience with APIs, React, JavaScript, JUnit and Mockito.",
-    "I'm also drawn to cloud services like AWS and to cybersecurity — fields where the puzzles stay interesting. Off the clock, I nerd out on tech and games.",
+    "I'm also drawn to cloud services like AWS and to cybersecurity, fields where the puzzles stay interesting. Off the clock, I nerd out on tech and games.",
   ],
   socials: {
     github: "https://github.com/Minhya",

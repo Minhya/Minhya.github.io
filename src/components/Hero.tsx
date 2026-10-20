@@ -1,76 +1,25 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { ArrowDownRight, Mail } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      {/* Soft pink blob */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-32 -right-20 h-[28rem] w-[28rem] rounded-full bg-accent/40 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-40 -left-24 h-[22rem] w-[22rem] rounded-full bg-surface-muted blur-3xl"
-      />
-
-      <div className="relative mx-auto flex max-w-5xl flex-col gap-10 px-6 pt-20 pb-28 sm:pt-28 sm:pb-36">
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="font-mono text-sm text-accent-strong"
-        >
-          Hi, I'm {site.shortName}
-        </motion.p>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-7xl lg:text-8xl"
-        >
-          Creative developer, <br />
-          <span className="italic text-accent-strong">logical </span> problem
-          solver.
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-2xl text-lg leading-relaxed text-foreground-muted sm:text-xl"
-        >
-          I'm drawn to the hard parts of software, knotty architecture,
-          tangled bugs, the puzzles that reward both logic and a bit of
-          creative thinking.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap items-center gap-3"
-        >
-          <a
-            href="#projects"
-            className="group inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
-          >
-            View projects
-            <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
-          </a>
-          <a
-            href={`mailto:${site.email}`}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent-strong"
-          >
-            <Mail className="h-4 w-4" />
-            Get in touch
-          </a>
-        </motion.div>
+    <section id="home" className="hero" aria-label="Introduction">
+      <div className="hero-stage">
+        <h1 className="hero-name"><span>Anna</span><span>Nguyen</span></h1>
+        <div className="identity-card" aria-label="AN, Anna Nguyen, software developer">
+          <span className="identity-caption">A little logic. A lot of curiosity.</span>
+          <span className="identity-initials" aria-hidden="true">an.</span>
+          <div className="identity-footer"><span>Software developer</span><span>{site.location}</span></div>
+        </div>
+        <div className="hero-intro">
+          <span className="hello-mark" aria-hidden="true">✳</span>
+          <h2>Hi, I’m Anna.<br />I like a good problem.</h2>
+          <p>I build software with .NET, Java, and a curious mind. Drawn to the backend, the tricky bugs, and figuring out how things fit together.</p>
+          <a href="#projects" className="outline-link">Explore my work <ArrowUpRight size={18} aria-hidden="true" /></a>
+        </div>
+        <a className="hero-scroll" href="#about"><ArrowDown size={16} aria-hidden="true" /> A little about me</a>
       </div>
+      <a href="#contact" className="availability-rail"><span>Open to opportunities</span><ArrowUpRight size={27} aria-hidden="true" /></a>
     </section>
   );
 }

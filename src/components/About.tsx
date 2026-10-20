@@ -1,75 +1,34 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { MapPin, Mail, ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/site";
 
-const groups: Array<{ label: string; items: readonly string[] }> = [
+const groups = [
   { label: "Languages", items: site.skills.languages },
   { label: "Frameworks", items: site.skills.frameworks },
   { label: "Testing", items: site.skills.testing },
-  { label: "Interests", items: site.skills.interests },
+  { label: "Exploring", items: site.skills.interests },
 ];
 
 export function About() {
   return (
-    <section id="about" className="mx-auto max-w-5xl px-6 py-24">
-      <motion.p
-        initial={{ opacity: 0, y: 8 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        className="font-mono text-sm text-accent-strong"
-      >
-        About
-      </motion.p>
-      <motion.h2
-        initial={{ opacity: 0, y: 8 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ delay: 0.05 }}
-        className="mt-2 font-display text-4xl font-semibold tracking-tight sm:text-5xl"
-      >
-        Curious by nature. Logical by training.
-      </motion.h2>
-
-      <div className="mt-10 grid gap-12 md:grid-cols-5">
-        <div className="md:col-span-3 space-y-5 text-lg leading-relaxed text-foreground-muted">
-          {site.bio.map((paragraph, i) => (
-            <motion.p
-              key={i}
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ delay: 0.1 + i * 0.05 }}
-            >
-              {paragraph}
-            </motion.p>
-          ))}
+    <section id="about" className="page-section biography">
+      <h2 className="section-title">Biography</h2>
+      <span className="hello-note">Hello there!</span>
+      <p className="bio-lead">I’m Anna Nguyen, a software developer based in Sweden. I enjoy untangling a difficult problem, understanding what’s happening underneath, and building something useful from it.</p>
+      <div className="bio-grid">
+        <div className="bio-copy">
+          <h3>A little more about me</h3>
+          {site.bio.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          <div className="personal-details">
+            <span><MapPin size={17} aria-hidden="true" />{site.location}</span>
+            <a href={`mailto:${site.email}`}><Mail size={17} aria-hidden="true" />{site.email}</a>
+          </div>
+          <a className="text-link" href={site.socials.linkedin} target="_blank" rel="noopener noreferrer">Find me on LinkedIn <ArrowUpRight size={17} aria-hidden="true" /></a>
         </div>
-
-        <div className="md:col-span-2 space-y-6">
-          {groups.map((group, i) => (
-            <motion.div
-              key={group.label}
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ delay: 0.1 + i * 0.05 }}
-            >
-              <h3 className="font-mono text-xs uppercase tracking-wider text-foreground-muted">
-                {group.label}
-              </h3>
-              <ul className="mt-2 flex flex-wrap gap-2">
-                {group.items.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-full border border-border bg-surface px-3 py-1 text-sm"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+        <div className="skills-list">
+          <h3>What I work with</h3>
+          <dl>{groups.map(({ label, items }) => (
+            <div className="skill-row" key={label}><dt>{label}</dt><dd>{items.join(", ")}</dd></div>
+          ))}</dl>
         </div>
       </div>
     </section>

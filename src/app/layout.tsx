@@ -1,25 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces, JetBrains_Mono } from "next/font/google";
+import Link from "next/link";
+import { Manrope } from "next/font/google";
 import { site } from "@/lib/site";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Nav } from "@/components/Nav";
 import "./globals.css";
 
-const sans = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const display = Fraunces({
-  variable: "--font-display",
-  subsets: ["latin"],
-  display: "swap",
-  axes: ["SOFT", "opsz"],
-});
-
-const mono = JetBrains_Mono({
-  variable: "--font-mono",
+const sans = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   display: "swap",
 });
@@ -27,7 +15,7 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: `${site.name} | ${site.tagline}`,
     template: `%s · ${site.name}`,
   },
   description: site.tagline,
@@ -51,15 +39,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
-      className={`${sans.variable} ${display.variable} ${mono.variable} h-full antialiased`}
+      className={`${sans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <a className="skip-link" href="#main-content">Skip to content</a>
           <Nav />
-          <main className="flex-1">{children}</main>
-          <footer className="border-t border-border/60 py-8 text-center text-sm text-foreground-muted">
-            © {new Date().getFullYear()} {site.name}.
+          <main id="main-content" className="site-main">{children}</main>
+          <footer className="site-footer">
+            <span>© {new Date().getFullYear()} {site.name}</span><Link href="/#home">Back to top ↑</Link>
           </footer>
         </ThemeProvider>
       </body>
