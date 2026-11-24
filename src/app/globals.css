@@ -151,6 +151,8 @@ section[id] { scroll-margin-top: 30px; }
 .project-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 35px; }
 .project-gallery figure { min-width: 0; }
 .blackpink-screenshot { background: #1e1e1e; }
+.blackpink-thumbnail { background: #000; }
+.blackpink-thumbnail img { object-fit: cover; }
 .coffee-screenshot { background: #aa8a6a; }
 .coffee-gallery figure:first-child { grid-column: 1 / -1; }
 .project-detail .project-gallery.coffee-gallery .project-artwork { height: auto; aspect-ratio: 840 / 955; }

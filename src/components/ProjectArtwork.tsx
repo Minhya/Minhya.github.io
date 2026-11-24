@@ -41,8 +41,8 @@ export function ProjectThumbnail({ slug }: { slug: string }) {
   }
   if (slug === "blackpink-discography") {
     return (
-      <div className="project-artwork project-screenshot blackpink-screenshot">
-        <Image src="/projects/blackpink-home.png" alt="BLACKPINK artist website home page in black and pink" width={1640} height={1224} sizes="(max-width: 480px) 100vw, 50vw" />
+      <div className="project-artwork project-screenshot blackpink-thumbnail">
+        <Image src="/projects/blackpink-thumbnail.png" alt="BLACKPINK logo in pink on a black background" width={2074} height={2074} sizes="(max-width: 480px) 100vw, 50vw" />
       </div>
     );
   }
