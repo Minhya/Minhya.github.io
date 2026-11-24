@@ -43,7 +43,7 @@ export const projects: Project[] = [
     summary:
       "A fanmade discography website for BLACKPINK, built from scratch with plain HTML, CSS, and JavaScript.",
     description:
-      "An artist website exercise built entirely without frameworks, structured HTML, hand-written CSS layouts, and vanilla JavaScript. Covers BLACKPINK's discography in a clean, browsable format. A focused demonstration of core web fundamentals before moving into framework-based work.",
+      "An artist website exercise built entirely without frameworks, structured HTML, hand-written CSS layouts, and JavaScript. Covers BLACKPINK's discography in a clean, browsable format. A focused demonstration of core web fundamentals before moving into framework-based work.",
     tags: ["HTML", "CSS", "JavaScript"],
     status: "complete",
     repoUrl: "https://github.com/Minhya/webbutv/tree/main/ovningar/artisthemsida",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     summary:
         "A shared note app, where we can keep up with our todos together. Need to add something to the grocery list that the other can see? Here you go.",
     description: "A fullstack app where members can share their reminders and notes together. Add notes, todos and set reminders for them.",
-    tags: ["Next.js", "React Native", "Expo", "TypeScript", "SQLite", "NativeWind"],
+    tags: ["Svelte", "Rust", "Shell", "Dockerfile", "TypeScript", "Next.js", "React Native", "Expo", "SQLite"],
     status: "in-progress",
   },
   {
@@ -65,9 +65,9 @@ export const projects: Project[] = [
     summary:
       "A shared library where we can catalogue, review, and plan our next reads together. This is a project for my reading hobby that I share with friends.",
     description:
-      "A fullstack app where members of this book club can build a shared digital library: add books, track who has which copy, and review titles, and vote on what to read next. The goal is to replace the scattered spreadsheets and chat messages that most clubs rely on.",
-    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "C#", "SQL"],
-    status: "planning",
+      "A fullstack app where members of this book club can build a shared digital library: add books, track who has which copy, and review titles, and vote on what to read next. The goal is to replace the scattered spreadsheets and chat messages that most clubs rely on. The planned backend uses C# with ASP.NET Core, Entity Framework Core, and PostgreSQL. The interface uses Flutter with Dart, with an Android APK built from the same Flutter project.",
+    tags: ["C#", "ASP.NET Core", "Entity Framework Core", "PostgreSQL", "Dart", "Flutter"],
+    status: "in-progress",
   },
   {
     slug: "budget-app",
