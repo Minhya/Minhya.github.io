@@ -109,7 +109,7 @@ section[id] { scroll-margin-top: 30px; }
 .education-period > span { font-size: 12px; color: var(--foreground-muted); }
 .education-period > p { margin-top: 10px; font-size: 15px; font-weight: 600; }
 .education-programme { position: relative; border-left: 1px solid var(--border); padding-left: 30px; padding-bottom: 10px; }
-.education-programme::before { content: ""; position: absolute; left: -5px; top: 7px; width: 9px; height: 9px; border-radius: 50%; background: var(--accent-strong); }
+.education-programme::before { content: none; display: none; }
 .education-programme h4 { font-size: 18px; line-height: 1.5; font-weight: 600; letter-spacing: -.025em; }
 .education-placement { margin-top: 16px; font-size: 13px; line-height: 1.8; color: var(--foreground-muted); }
 @media (max-width: 600px) {
