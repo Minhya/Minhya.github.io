@@ -55,8 +55,8 @@ export const projects: Project[] = [
     title: "glum, a shared app for writing notes and reminders",
     summary:
         "A shared note app, where we can keep up with our todos together. Need to add something to the grocery list that the other can see? Here you go.",
-    description: "A fullstack app where members can share their reminders and notes together. Add notes, todos and set reminders for them.",
-    tags: ["Svelte", "Rust", "Shell", "Dockerfile", "TypeScript", "Next.js", "React Native", "Expo", "SQLite"],
+    description: "A fullstack app where members can share their reminders and notes together. Add notes, todos and set reminders for them. The backend uses Rust, with an Expo and React Native frontend, gRPC for synchronisation, and PostgreSQL for the database.",
+    tags: ["Rust", "Expo", "React Native", "gRPC", "PostgreSQL"],
     status: "in-progress",
   },
   {
