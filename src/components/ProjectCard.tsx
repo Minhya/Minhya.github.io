@@ -17,7 +17,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <ProjectThumbnail slug={project.slug} />
         <span className="project-open" aria-hidden="true"><ArrowUpRight size={24} /></span>
       </Link>
-      <div className="project-meta"><span className={`status-tag status-${project.status}`}>{projectStatus[project.status]}</span><span>{project.category ?? (project.collaboration ? "Group project" : project.tags.slice(0, 2).join(" / "))}</span></div>
+      <div className="project-meta"><span className={`status-tag status-${project.status}`}>{projectStatus[project.status]}</span><span>{project.category ?? project.tags.slice(0, 2).join(" / ")}</span></div>
       <h3><Link href={`/projects/${project.slug}/`}>{project.title}</Link></h3>
       <p>{project.summary}</p>
     </article>
