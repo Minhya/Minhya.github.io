@@ -8,7 +8,7 @@ export const site = {
   bio: [
     "I'm a curious, creative developer who lights up around hard problems. I'm looking for a role in systems, backend, or fullstack development, on-site or remote.",
     "I work mainly in .NET, Java and Spring Boot with SQL and the web stack, and have hands-on experience with APIs, React, JavaScript, JUnit and Mockito.",
-    "I'm also drawn to cloud services like AWS and to cybersecurity, fields where the puzzles stay interesting. Off the clock, I nerd out on tech and games.",
+    "I'm also drawn to cloud services like AWS and to cybersecurity, fields where the puzzles stay interesting. Off the clock, I nerd out on tech and games, and enjoy singing, playing the piano, drawing, and going to the gym.",
   ],
   socials: {
     github: "https://github.com/Minhya",
@@ -17,7 +17,7 @@ export const site = {
   skills: {
     languages: ["C#", "Java", "JavaScript", "TypeScript", "SQL", "HTML", "Dart"],
     frameworks: ["Spring Boot", ".NET", "React", "Next.js", "Tailwind CSS", "Node.js", "Flutter"],
-    technologies: ["APIs"],
+    technologies: ["APIs", "Docker", "PostgreSQL", "MySQL", "SQLite", "CI/CD automation"],
     testing: ["JUnit", "Mockito"],
     interests: [ "Azure", "Amazon Web Services", "Cybersecurity"],
   },
