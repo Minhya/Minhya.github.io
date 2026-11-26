@@ -1,7 +1,7 @@
 import { projects } from "@/content/projects";
 import { ProjectCard } from "./ProjectCard";
 
-const order = ["ake-olssons", "note-app", "cosmigo", "bookclub-library", "vue-coffee-list", "budget-app", "blackpink-discography"];
+const order = ["rosas-syatelje", "ake-olssons", "note-app", "cosmigo", "bookclub-library", "vue-coffee-list", "budget-app", "blackpink-discography"];
 
 export function Projects() {
   return (

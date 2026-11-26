@@ -14,6 +14,16 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "rosas-syatelje",
+    title: "Rosas Syateljé",
+    summary: "A completed website I built for a sewing studio in Lysekil, presenting clothing repairs, alterations, and tailoring services.",
+    description: "I built the website for Rosas Syateljé in Lysekil. It introduces the studio and its services, including clothing repairs, alterations, and tailoring. Visitors can find information about Rosa, opening hours, contact details, and directions to the studio. The website is completed and live.",
+    tags: [],
+    category: "Business website",
+    status: "complete",
+    liveUrl: "https://www.rosassyatelje.se/",
+  },
   // ── Finished ──────────────────────────────────────────────────
   {
     slug: "cosmigo",
@@ -57,7 +67,7 @@ export const projects: Project[] = [
     summary: "A client website for a business selling wreath frames and running a plant nursery in Floda, Sweden.",
     description: "I built this website for Åke Olssons i Floda AB, a client whose business sells wreath frames and runs a plant nursery. The website presents the business and its products. The project is in progress, with the current website available online.",
     tags: ["TypeScript", "CSS"],
-    category: "Client website",
+    category: "Business website",
     status: "in-progress",
     liveUrl: "https://akeolsson.se/sv/",
   },

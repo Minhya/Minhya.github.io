@@ -39,6 +39,13 @@ const coffeeScreenshots = [
 ];
 
 export function ProjectThumbnail({ slug }: { slug: string }) {
+  if (slug === "rosas-syatelje") {
+    return (
+      <div className="project-artwork project-screenshot rosas-thumbnail">
+        <Image src="/projects/rosas-thumbnail-light.png" alt="Rosas Syateljé logo on a light fabric-textured background" width={426} height={184} sizes="(max-width: 480px) 100vw, 50vw" />
+      </div>
+    );
+  }
   if (slug === "ake-olssons") {
     return (
       <div className="project-artwork project-screenshot ake-olssons-thumbnail">
@@ -90,6 +97,28 @@ export function ProjectThumbnail({ slug }: { slug: string }) {
 }
 
 export function ProjectArtwork({ slug }: { slug: string }) {
+  if (slug === "rosas-syatelje") {
+    const screenshots = [
+      { name: "home", caption: "Home page and services", width: 2357, height: 1373 },
+      { name: "visit", caption: "Opening hours and directions", width: 2354, height: 1370 },
+    ];
+    return (
+      <div className="project-gallery rosas-gallery">
+        {screenshots.map(({ name, caption, width, height }) => {
+          const src = `/projects/rosas-${name}.png`;
+          const alt = `Rosas Syateljé: ${caption}`;
+          return (
+            <figure key={name}>
+              <ZoomableImage className="project-artwork project-screenshot rosas-screenshot" src={src} alt={alt} width={width} height={height}>
+                <Image src={src} alt={alt} width={width} height={height} sizes="(max-width: 760px) 100vw, 760px" />
+              </ZoomableImage>
+              <figcaption>{caption}</figcaption>
+            </figure>
+          );
+        })}
+      </div>
+    );
+  }
   if (slug === "vue-coffee-list") {
     return (
       <div className="project-gallery coffee-gallery">

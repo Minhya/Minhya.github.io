@@ -158,6 +158,17 @@ section[id] { scroll-margin-top: 30px; }
 .blackpink-thumbnail { background: #000; }
 .ake-olssons-thumbnail { background: #f4f1e8; }
 .ake-olssons-thumbnail img { padding: 8%; }
+.rosas-thumbnail { background: #3d5c6b; }
+.project-screenshot.rosas-thumbnail { background: #3d5c6b; }
+.project-screenshot.rosas-thumbnail img {
+  padding: 0;
+  object-fit: cover;
+  object-position: 44% center;
+  transform: scale(1.25) translateY(5%);
+}
+.rosas-screenshot { background: #f6f1e7; }
+.project-gallery.rosas-gallery { grid-template-columns: 1fr; }
+.project-detail .project-gallery.rosas-gallery .project-artwork { height: auto; aspect-ratio: 2357 / 1373; }
 .blackpink-thumbnail img { object-fit: cover; }
 .coffee-screenshot { background: #aa8a6a; }
 .coffee-gallery figure:first-child { grid-column: 1 / -1; }
