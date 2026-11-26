@@ -15,10 +15,11 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/anna-nguyenn/",
   },
   skills: {
-    languages: ["C#", "Java", "JavaScript", "TypeScript", "SQL"],
-    frameworks: ["Spring Boot", ".NET", "React", "Next.js", "Tailwind CSS"],
+    languages: ["C#", "Java", "JavaScript", "TypeScript", "SQL", "HTML", "Dart"],
+    frameworks: ["Spring Boot", ".NET", "React", "Next.js", "Tailwind CSS", "Node.js", "Flutter"],
+    technologies: ["APIs"],
     testing: ["JUnit", "Mockito"],
-    interests: [ "Azure", "Amazon Web Services", "Cybersecurity", "APIs"],
+    interests: [ "Azure", "Amazon Web Services", "Cybersecurity"],
   },
 } as const;
 

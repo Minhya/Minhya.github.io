@@ -3,7 +3,8 @@ import { site } from "@/lib/site";
 
 const groups = [
   { label: "Languages", items: site.skills.languages },
-  { label: "Frameworks", items: site.skills.frameworks },
+  { label: "Frameworks & tools", items: site.skills.frameworks },
+  { label: "Also worked with", items: site.skills.technologies },
   { label: "Testing", items: site.skills.testing },
   { label: "Exploring", items: site.skills.interests },
 ];
