@@ -66,7 +66,7 @@ export const projects: Project[] = [
     title: "Åke Olssons i Floda AB",
     summary: "A client website for a business selling wreath frames and running a garden centre in Floda, Sweden.",
     description: "I built this website for Åke Olssons i Floda AB, a client whose business sells wreath frames and runs a garden centre. The website presents the business and its products. The project is in progress, with the current website available online.",
-    tags: ["TypeScript", "CSS"],
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
     category: "Business website",
     status: "in-progress",
     liveUrl: "https://akeolsson.se/sv/",
