@@ -102,7 +102,7 @@ export default async function ProjectPage({
         <p className="mt-3 text-lg leading-relaxed">{project.description}</p>
       </div>
 
-      <div className="mt-10">
+      {project.tags.length > 0 ? <div className="mt-10">
         <h2>
           {project.status === "planning" ? "Planned stack" : "Stack used"}
         </h2>
@@ -116,7 +116,7 @@ export default async function ProjectPage({
             </li>
           ))}
         </ul>
-      </div>
+      </div> : null}
 
       {!isComplete && (
         <div className="mt-14 border-l-2 border-accent bg-surface-muted p-6 text-sm leading-relaxed text-foreground-muted">

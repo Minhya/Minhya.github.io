@@ -139,6 +139,10 @@ section[id] { scroll-margin-top: 30px; }
 .project-art-link { position: relative; display: block; }
 .project-artwork { aspect-ratio: 1.24; overflow: hidden; position: relative; container-type: inline-size; }
 .project-artwork > div { width: 100%; height: 100%; position: relative; overflow: hidden; }
+.art-ake-olssons { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 8%; text-align: center; background: #e3e8dc; color: #2c4535; }
+.art-ake-olssons > span:first-child { font-family: Georgia, serif; font-size: 11cqw; line-height: 1.1; }
+.art-ake-olssons > span:nth-child(2) { font-size: 4cqw; margin-top: 4%; }
+.art-ake-olssons p { font-size: 3cqw; margin-top: 10%; }
 .project-screenshot { display: grid; place-items: center; background: #211325; }
 .project-screenshot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 .project-screenshot-portrait {
@@ -152,6 +156,8 @@ section[id] { scroll-margin-top: 30px; }
 .project-gallery figure { min-width: 0; }
 .blackpink-screenshot { background: #1e1e1e; }
 .blackpink-thumbnail { background: #000; }
+.ake-olssons-thumbnail { background: #f4f1e8; }
+.ake-olssons-thumbnail img { padding: 8%; }
 .blackpink-thumbnail img { object-fit: cover; }
 .coffee-screenshot { background: #aa8a6a; }
 .coffee-gallery figure:first-child { grid-column: 1 / -1; }

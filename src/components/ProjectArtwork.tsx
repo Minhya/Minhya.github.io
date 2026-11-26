@@ -2,6 +2,13 @@ import Image from "next/image";
 import { ZoomableImage } from "./ZoomableImage";
 
 const artwork = {
+  "ake-olssons": (
+    <div className="art-ake-olssons">
+      <span>Åke Olssons</span>
+      <span>i Floda AB</span>
+      <p>Kransstommar &amp; handelsträdgård</p>
+    </div>
+  ),
   "bookclub-library": (
     <div className="art-books">
       <span className="books-caption">A place for our next read.</span>
@@ -32,6 +39,13 @@ const coffeeScreenshots = [
 ];
 
 export function ProjectThumbnail({ slug }: { slug: string }) {
+  if (slug === "ake-olssons") {
+    return (
+      <div className="project-artwork project-screenshot ake-olssons-thumbnail">
+        <Image src="/projects/ake-olssons-thumbnail.png" alt="Åke Olssons, kransstommar och handelsträdgård" width={302} height={72} sizes="(max-width: 480px) 100vw, 50vw" />
+      </div>
+    );
+  }
   if (slug === "vue-coffee-list") {
     return (
       <div className="project-artwork project-screenshot coffee-screenshot">
