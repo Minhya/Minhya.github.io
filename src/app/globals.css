@@ -131,10 +131,19 @@ section[id] { scroll-margin-top: 30px; }
 .skill-row:first-child { padding-top: 0; }
 .skill-row dt { font-size: 13px; font-weight: 600; margin-bottom: 7px; }
 .skill-row dd { font-size: 12px; line-height: 1.9; color: var(--foreground-muted); }
-.work-heading { display: flex; align-items: end; justify-content: space-between; gap: 35px; margin-bottom: 48px; }
+.work-section {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 56px clamp(25px, 5vw, 72px);
+}
+.work-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 30px; }
 .work-heading .section-title { max-width: 12ch; }
 .work-heading > p { color: var(--foreground-muted); font-size: 13px; line-height: 1.8; }
-.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 58px 7%; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 26px; }
+.project-card .project-artwork { aspect-ratio: 1.6; }
+@media (min-width: 1200px) {
+  .project-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 .project-card { min-width: 0; }
 .project-art-link { position: relative; display: block; }
 .project-artwork { aspect-ratio: 1.24; overflow: hidden; position: relative; container-type: inline-size; }
@@ -202,9 +211,9 @@ html:has(.image-lightbox[open]) { overflow: hidden; }
 .status-tag { border: 1px solid var(--border); padding: 4px 10px; border-radius: 20px; color: var(--foreground); }
 .status-in-progress { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 .status-planning { background: var(--surface-muted); }
-.project-card h3 { font-size: clamp(19px, 1.65vw, 25px); font-weight: 650; letter-spacing: -.035em; line-height: 1.35; }
+.project-card h3 { font-size: 20px; font-weight: 650; letter-spacing: -.035em; line-height: 1.35; }
 .project-card h3 a:hover { text-decoration: underline; }
-.project-card > p { margin-top: 11px; color: var(--foreground-muted); font-size: 12px; line-height: 1.9; max-width: 60ch; }
+.project-card > p { margin-top: 8px; color: var(--foreground-muted); font-size: 12px; line-height: 1.75; max-width: 60ch; }
 .art-brand { position: absolute; top: 7%; left: 8%; font-size: 10cqw; font-weight: 700; letter-spacing: -.07em; }
 .art-glum { background: #efd1d8; color: #542f3c; }
 .art-glum .art-brand span { margin-left: 8px; font-weight: 400; }
@@ -282,7 +291,7 @@ html:has(.image-lightbox[open]) { overflow: hidden; }
   .hero-stage { padding: 50px 6%; }.hero-name { font-size: 11.5vw; }.hero-name span:last-child { margin-left: 29%; }
   .hero, .hero-stage { min-height: 670px; }.identity-card { top: 220px; left: 8%; width: 34%; padding: 17px; }.identity-caption { font-size: 10px; }.identity-footer { font-size: 8px; }
   .hero-intro { margin-top: 45px; width: 47%; }.hero-intro p { font-size: 12px; }.availability-rail { width: 45px; }.availability-rail span { font-size: 18px; }
-  .page-section { padding: 65px 7%; }.bio-grid { gap: 7%; }.personal-details { font-size: 11px; }.project-grid { gap: 42px 6%; }
+  .page-section { padding: 65px 7%; }.bio-grid { gap: 7%; }.personal-details { font-size: 11px; }.project-grid { gap: 32px 24px; }
 }
 @media (max-width: 760px) {
   :root { --sidebar-width: 0px; }
@@ -301,7 +310,7 @@ html:has(.image-lightbox[open]) { overflow: hidden; }
   .page-section { padding: 55px 25px; }.section-title { font-size: 34px; }.hello-note { margin-top: 32px; }.bio-lead { font-size: 22px; }
   .bio-grid { grid-template-columns: 1fr; gap: 38px; margin-top: 35px; }.bio-copy p { font-size: 14px; }.skill-row { display: grid; grid-template-columns: 100px 1fr; gap: 15px; }.skill-row dt { margin: 0; }
   .work-heading { display: block; margin-bottom: 30px; }.work-heading .section-title { max-width: 15ch; }.work-heading > p { margin-top: 18px; font-size: 13px; }
-  .project-grid { gap: 38px 24px; }.project-meta { gap: 7px; font-size: 9px; margin-top: 13px; }.status-tag { padding: 3px 8px; }.project-card h3 { font-size: 19px; }.project-card > p { font-size: 12px; }.project-open { width: 32px; height: 32px; bottom: 10px; right: 10px; opacity: 1; transform: none; }.project-open svg { width: 18px; }
+  .project-grid { gap: 30px 20px; }.project-meta { gap: 7px; font-size: 9px; margin-top: 13px; }.status-tag { padding: 3px 8px; }.project-card h3 { font-size: 19px; }.project-card > p { font-size: 12px; }.project-open { width: 32px; height: 32px; bottom: 10px; right: 10px; opacity: 1; transform: none; }.project-open svg { width: 18px; }
   .contact-section { grid-template-columns: 1fr; gap: 25px; }.contact-email { font-size: 20px; }.site-footer { padding: 23px 25px; font-size: 10px; }
   .project-detail { padding: 45px 25px 65px; }
 }
@@ -312,7 +321,7 @@ html:has(.image-lightbox[open]) { overflow: hidden; }
   .hero-name { font-size: 19vw; }.hero-name span:last-child { margin-left: 5%; }
   .identity-card { top: 220px; left: 15%; width: 66%; max-width: 240px; aspect-ratio: 1.1; }.identity-initials { font-size: 24vw; }.identity-caption { max-width: none; font-size: 10px; }
   .hero-intro { margin: 285px 0 45px; width: 100%; max-width: 320px; }.hero-intro h2 { font-size: 25px; }.hero-intro p { max-width: 36ch; font-size: 13px; }.hello-mark { display: none; }.outline-link { font-size: 12px; padding: 12px 16px; }
-  .project-grid { grid-template-columns: 1fr; gap: 40px; }.project-card h3 { font-size: 23px; }.project-card > p { font-size: 13px; }.project-meta { font-size: 10px; }.work-heading .section-title { max-width: 12ch; }
+  .project-grid { grid-template-columns: 1fr; gap: 30px; }.project-card h3 { font-size: 20px; }.project-card > p { font-size: 13px; }.project-meta { font-size: 10px; }.work-heading .section-title { max-width: 12ch; }
   .contact-email { font-size: 16px; }.personal-details { flex-direction: column; }.skill-row { grid-template-columns: 85px 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
